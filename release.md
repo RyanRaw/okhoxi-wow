@@ -12,15 +12,15 @@ Thy-core Release Notes
 ### 2023/9/27: everking 1.0
 - wotlk release version for CentOS7.9,  level 80
 
-<a href="https://everwar.cn/guide/king" target="_blank">everking-1.0 release</a>
+<a href="https://uecore.org/guide/king" target="_blank">everking-1.0 release</a>
 
 ### 2023/9/20: version 1.1
 - release version for CentOS7.9
 
-<a href="https://everwar.cn/deploy/everwar_1_1" target="_blank">everwar-1.1 release</a>
+<a href="https://uecore.org/deploy/uecore_1_1" target="_blank">uecore-1.1 release</a>
 
 
 ### 2020/3/1: version 1.0
 - release version for CentOS6.5
 
-<a href="https://everwar.cn/deploy/everwar_1_0" target="_blank">everwar-1.0 release</a>
+<a href="https://uecore.org/deploy/uecore_1_0" target="_blank">uecore-1.0 release</a>

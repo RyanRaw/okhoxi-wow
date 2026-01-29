@@ -31,7 +31,7 @@
 #include "Group.h"
 
 // Playerbot mod:
-#include "playerbot/PlayerbotAI.h"
+#include "PlayerBot/PlayerbotAI.h"
 
 void WorldSession::HandleQuestgiverStatusQueryOpcode(WorldPacket& recv_data)
 {

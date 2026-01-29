@@ -60,6 +60,7 @@ target_include_directories(${LIBRARY_NAME}
             ${CMAKE_SOURCE_DIR}/src/game
             ${CMAKE_BINARY_DIR}
             ${CMAKE_BINARY_DIR}/src/shared
+            ${MYSQL_INCLUDE_DIR}
             ${OPENSSL_INCLUDE_DIR}
 )
 add_dependencies(${LIBRARY_NAME} revision.h)
@@ -91,7 +92,8 @@ endif()
 if(UNIX)
   target_link_libraries(${LIBRARY_NAME}
     ${MYSQL_LIBRARY}
-    ${OPENSSL_LIBRARIES}
+    crypto
+    ssl
     ${OPENSSL_EXTRA_LIBRARIES}
     ${ZLIB_LIBRARIES}
   )

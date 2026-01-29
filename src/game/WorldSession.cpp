@@ -44,8 +44,8 @@
 #include <cstdarg>
 
 // Playerbot mod
-#include "playerbot/PlayerbotMgr.h"
-#include "playerbot/PlayerbotAI.h"
+#include "PlayerBot/PlayerbotMgr.h"
+#include "PlayerBot/PlayerbotAI.h"
 
 // select opcodes appropriate for processing in Map::Update context for current session state
 static bool MapSessionFilterHelper(WorldSession* session, OpcodeHandler const& opHandle)

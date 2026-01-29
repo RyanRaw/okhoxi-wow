@@ -29,7 +29,7 @@
 #include "BattleGround/BattleGround.h"
 #include "MapManager.h"
 #include "MapPersistentStateMgr.h"
-#include "playerbot/PlayerbotMgr.h"
+#include "PlayerBot/PlayerbotMgr.h"
 
 GroupMemberStatus GetGroupMemberStatus(const Player *member = nullptr)
 {

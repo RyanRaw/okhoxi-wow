@@ -339,49 +339,49 @@ namespace VMAP
 
         uint32 name_length, displayId;
         char buff[500];
-        while (!feof(model_list))
-        {
-            fread(&displayId, sizeof(uint32), 1, model_list);
-            fread(&name_length, sizeof(uint32), 1, model_list);
-
-            if (name_length >= sizeof(buff))
-            {
-                std::cout << "\nFile '" << GAMEOBJECT_MODELS << "' seems to be corrupted" << std::endl;
-                break;
-            }
-
-            fread(&buff, sizeof(char), name_length, model_list);
-            std::string model_name(buff, name_length);
-
-            WorldModel_Raw raw_model;
-            if (!raw_model.Read((iSrcDir + "/" + model_name).c_str()))
-                continue;
-
-            spawnedModelFiles.insert(model_name);
-
-            AABox bounds;
-            bool boundEmpty = true;
-            for (uint32 g = 0; g < raw_model.groupsArray.size(); ++g)
-            {
-                std::vector<Vector3>& vertices = raw_model.groupsArray[g].vertexArray;
-
-                uint32 nvectors = vertices.size();
-                for (uint32 i = 0; i < nvectors; ++i)
-                {
-                    Vector3& v = vertices[i];
-                    if (boundEmpty)
-                        bounds = AABox(v, v), boundEmpty = false;
-                    else
-                        bounds.merge(v);
-                }
-            }
-
-            fwrite(&displayId, sizeof(uint32), 1, model_list_copy);
-            fwrite(&name_length, sizeof(uint32), 1, model_list_copy);
-            fwrite(&buff, sizeof(char), name_length, model_list_copy);
-            fwrite(&bounds.low(), sizeof(Vector3), 1, model_list_copy);
-            fwrite(&bounds.high(), sizeof(Vector3), 1, model_list_copy);
-        }
+//        while (!feof(model_list))
+//        {
+//            fread(&displayId, sizeof(uint32), 1, model_list);
+//            fread(&name_length, sizeof(uint32), 1, model_list);
+//
+//            if (name_length >= sizeof(buff))
+//            {
+//                std::cout << "\nFile '" << GAMEOBJECT_MODELS << "' seems to be corrupted" << std::endl;
+//                break;
+//            }
+//
+//            fread(&buff, sizeof(char), name_length, model_list);
+//            std::string model_name(buff, name_length);
+//
+//            WorldModel_Raw raw_model;
+//            if (!raw_model.Read((iSrcDir + "/" + model_name).c_str()))
+//                continue;
+//
+//            spawnedModelFiles.insert(model_name);
+//
+//            AABox bounds;
+//            bool boundEmpty = true;
+//            for (uint32 g = 0; g < raw_model.groupsArray.size(); ++g)
+//            {
+//                std::vector<Vector3>& vertices = raw_model.groupsArray[g].vertexArray;
+//
+//                uint32 nvectors = vertices.size();
+//                for (uint32 i = 0; i < nvectors; ++i)
+//                {
+//                    Vector3& v = vertices[i];
+//                    if (boundEmpty)
+//                        bounds = AABox(v, v), boundEmpty = false;
+//                    else
+//                        bounds.merge(v);
+//                }
+//            }
+//
+//            fwrite(&displayId, sizeof(uint32), 1, model_list_copy);
+//            fwrite(&name_length, sizeof(uint32), 1, model_list_copy);
+//            fwrite(&buff, sizeof(char), name_length, model_list_copy);
+//            fwrite(&bounds.low(), sizeof(Vector3), 1, model_list_copy);
+//            fwrite(&bounds.high(), sizeof(Vector3), 1, model_list_copy);
+//        }
         fclose(model_list);
         fclose(model_list_copy);
     }

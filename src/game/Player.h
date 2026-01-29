@@ -38,6 +38,9 @@
 #include "SharedDefines.h"
 #include "Chat.h"
 #include "SQLStorages.h"
+// Playerbot mod
+#include "AI/PlayerBot/PlayerbotMgr.h"
+#include "AI/PlayerBot/PlayerbotAI.h"
 
 #include<vector>
 
@@ -54,9 +57,6 @@ class DungeonPersistentState;
 class Spell;
 class Item;
 
-// Playerbot mod
-#include "playerbot/PlayerbotMgr.h"
-#include "playerbot/PlayerbotAI.h"
 
 struct AreaTrigger;
 

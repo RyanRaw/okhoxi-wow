@@ -9,14 +9,14 @@ you can dig in at any place you want to!
 
 *Work for any part is appreciated!*
 
-See our linklist at [UeCore Links](http://everwar.cn) for other places.
+See our linklist at [UeCore Links](http://uecore.org) for other places.
 
 This guide however is only for contributing to the UeCore core part -
 which is hosted at https://github.com/geektcp/UeCore
 
 ## Getting Started
 
-* Make sure you have a [Forum account](http://everwar.cn)
+* Make sure you have a [Forum account](http://uecore.org)
 * Make sure you have a [GitHub account](https://github.com/signup/free)
 * Watch the UeCore repository on GitHub (This way you will get informed about changes by GitHub)
 * Optionally: Fork the UeCore repository on GitHub in order to be able to publish own changes and create pull requests with them (see below for details)

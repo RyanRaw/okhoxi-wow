@@ -70,7 +70,8 @@ endif()
 if(UNIX)
   target_link_libraries(${LIBRARY_NAME}
     ${MYSQL_LIBRARY}
-    ${OPENSSL_LIBRARIES}
+    crypto
+    ssl
     ${OPENSSL_EXTRA_LIBRARIES}
   )
 endif()

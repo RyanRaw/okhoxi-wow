@@ -262,6 +262,10 @@ public:
     }
 
     void getBounds(Sphere& out) const;
+
+    bool isEmpty() const {
+        return lo.isNaN();
+    }
 };
 
 }

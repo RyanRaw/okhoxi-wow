@@ -2,4 +2,4 @@
 
 * geektcp        geektcp@gmail.com
 * git            https://github.com/geektcp/UeCore
-* website        http://everwar.cn
+* website        http://uecore.org

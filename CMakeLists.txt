@@ -1,8 +1,9 @@
 # build server
 
+cmake_minimum_required(VERSION 3.11)
+
 project(UeCore)
-set(EVERWAR_VERSION 1.3)
-cmake_minimum_required(VERSION 3.0)
+set(UECORE_VERSION 1.3)
 
 include(cmake/common.cmake)
 
@@ -14,18 +15,28 @@ set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(EVERWAR_BASE /usr/local)
+message("##############################################################")
+set(CMAKE_INSTALL_PREFIX /usr/local/uecore-1.4.0)
+
+set(OPENSSL_ROOT /usr/local/openssl)
+set(MYSQL_ROOT /usr/local/mysql)
+
+set(OPENSSL_INCLUDE_DIR ${OPENSSL_ROOT}/include)
+set(OPENSSL_CRYPTO_LIBRARY ${OPENSSL_ROOT}/lib)
+include_directories(${OPENSSL_ROOT}/include)
+link_directories(${OPENSSL_ROOT}/lib)
+#set(OPENSSL_SSL_LIBRARY ${OPENSSL_ROOT}/lib)
+
+set(BOOST_ROOT /usr/local/boost)
+include_directories(${BOOST_ROOT}/include)
+link_directories(${BOOST_ROOT}/lib)
+
+set(BUILD_WITH_DWARF ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-enum-float-conversion -Wno-deprecated-enum-enum-conversion")
+message("##############################################################")
 
 # set default buildoptions and print them
 include(cmake/options.cmake)
-
-set(EVERWAR_INSTALL UeCore)
-set(CMAKE_INSTALL_PREFIX ${EVERWAR_BASE}/${EVERWAR_INSTALL}-${EVERWAR_VERSION})
-
-set(BOOST_BASE boost)
-set(BOOST_ROOT ${EVERWAR_BASE}/${BOOST_BASE})
-link_directories(${EVERWAR_BASE}/${BOOST_BASE}/lib)
-include_directories(${EVERWAR_BASE}/${BOOST_BASE}/include)
 
 # Force out-of-source build
 if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
@@ -53,7 +64,6 @@ option(ENABLE_LTO "Enable link time optimization" ON)
 
 include(CheckPlatform)
 include(Warnings)
-find_package(MySQL)
 include(Colors)
 include(LTO)
 include(Warnings)
@@ -83,7 +93,7 @@ find_package(Git)
 
 # check if the platform supports precomiled headers
 #find_package(PCHSupport)
-include(cotire)
+#include(cotire)
 
 # Override configuration-types - we don't use anything else than debug and release
 if(CMAKE_CONFIGURATION_TYPES)

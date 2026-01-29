@@ -547,6 +547,8 @@ public:
 
     /** Can be passed to ignore a vector3 parameter */
     static Vector3& ignore();
+
+    bool isNaN() const;
 };
 
 inline G3D::Vector3 operator*(float s, const G3D::Vector3& v) {

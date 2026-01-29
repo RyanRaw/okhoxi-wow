@@ -1157,4 +1157,6 @@ bool ChatHandler::HandlePlayerbotCommand(char* args)
 
         return true;
     }
+
+    return false;
 }

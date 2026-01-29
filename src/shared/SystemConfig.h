@@ -64,8 +64,8 @@
 #  define SYSCONFDIR        ""
 #endif
 
-#ifndef EVERWAR_VERSION
-#  define EVERWAR_VERSION        ""
+#ifndef UECORE_VERSION
+#  define UECORE_VERSION        ""
 #endif
 
 #if PLATFORM == PLATFORM_WINDOWS
@@ -98,7 +98,7 @@
 # define _AUCTIONHOUSEBOT_CONFIG   SYSCONFDIR"ahbot.conf"
 #endif
 
-#define _FULLVERSION(REVD,REVT,REVH) _PACKAGENAME "/" EVERWAR_VERSION " for " _ENDIAN_PLATFORM
+#define _FULLVERSION(REVD,REVT,REVH) _PACKAGENAME "/" UECORE_VERSION " for " _ENDIAN_PLATFORM
 
 #define DEFAULT_PLAYER_LIMIT 100
 #define DEFAULT_WORLDSERVER_PORT 8085                       //8129

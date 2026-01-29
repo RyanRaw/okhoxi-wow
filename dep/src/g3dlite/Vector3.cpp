@@ -361,6 +361,10 @@ Matrix3 Vector3::cross() const {
 }
 
 
+bool Vector3::isNaN() const {
+    return G3D::isNaN(x) || G3D::isNaN(y) || G3D::isNaN(z);
+}
+
 void serialize(const Vector3::Axis& a, class BinaryOutput& bo) {
     bo.writeUInt8((uint8)a);
 }
