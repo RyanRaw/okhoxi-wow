@@ -91,6 +91,10 @@ set_target_properties(${LIBRARY_NAME} PROPERTIES LINK_FLAGS
 )
 
 install(TARGETS ${LIBRARY_NAME} DESTINATION ${LIB_DIR})
+install(FILES run-realmd DESTINATION ${LIB_DIR})
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/realmd.conf.dist.in ${CMAKE_CURRENT_BINARY_DIR}/realmd.conf.dist)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/realmd.conf.dist DESTINATION ${CONF_DIR})
+
 if(WIN32 AND MSVC)
   install(FILES ${CMAKE_CURRENT_BINARY_DIR}/\${BUILD_TYPE}/${LIBRARY_NAME}.pdb DESTINATION ${LIB_DIR} CONFIGURATIONS Debug)
 endif()

@@ -3,7 +3,7 @@
 cmake_minimum_required(VERSION 3.11)
 
 project(UeCore)
-set(UECORE_VERSION 1.3)
+set(UECORE_VERSION 1.4)
 
 include(cmake/common.cmake)
 
@@ -15,8 +15,8 @@ set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
 set(CMAKE_CXX_STANDARD 11)
 
-message("##############################################################")
-set(CMAKE_INSTALL_PREFIX /usr/local/uecore-1.4.0)
+message("##############################################################" )
+set(CMAKE_INSTALL_PREFIX /usr/local/${PROJECT_NAME}-${UECORE_VERSION})
 
 set(OPENSSL_ROOT /usr/local/openssl)
 set(MYSQL_ROOT /usr/local/mysql)
@@ -25,7 +25,6 @@ set(OPENSSL_INCLUDE_DIR ${OPENSSL_ROOT}/include)
 set(OPENSSL_CRYPTO_LIBRARY ${OPENSSL_ROOT}/lib)
 include_directories(${OPENSSL_ROOT}/include)
 link_directories(${OPENSSL_ROOT}/lib)
-#set(OPENSSL_SSL_LIBRARY ${OPENSSL_ROOT}/lib)
 
 set(BOOST_ROOT /usr/local/boost)
 include_directories(${BOOST_ROOT}/include)
