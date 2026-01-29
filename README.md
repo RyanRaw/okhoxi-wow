@@ -5,6 +5,7 @@ UeCore全球著名中文魔兽世界服务器开源项目
 > 2016年 6月，UeCore开源魔兽世界项目正式启动
 
 > 2017年 1月，UeCore进入正式开源开发阶段
+
 > 2018年 3月，支持Lua Engine
 
 > 2019年12月，UeCore发布第一个版本
@@ -32,6 +33,8 @@ UeCore全球著名中文魔兽世界服务器开源项目
 > 2025年 3月，优化部署文档。
 
 > 2025年 11月，加入NpcBot机器人。
+
+> 2026年 1月，发布RPM包一键安装版1.4
 
 ![登录入口](https://github.com/geektcp/UeCore/blob/master/screen/door.png)
 
