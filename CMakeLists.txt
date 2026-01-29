@@ -16,17 +16,18 @@ set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 set(CMAKE_CXX_STANDARD 11)
 
 message("##############################################################" )
-set(CMAKE_INSTALL_PREFIX /usr/local/${PROJECT_NAME}-${UECORE_VERSION})
+set(UECORE_BASE /usr/local)
+set(CMAKE_INSTALL_PREFIX ${UECORE_BASE}/${PROJECT_NAME}-${UECORE_VERSION})
 
-set(OPENSSL_ROOT /usr/local/openssl)
-set(MYSQL_ROOT /usr/local/mysql)
+set(OPENSSL_ROOT ${UECORE_BASE}/openssl)
+set(MYSQL_ROOT ${UECORE_BASE}/mysql)
 
 set(OPENSSL_INCLUDE_DIR ${OPENSSL_ROOT}/include)
 set(OPENSSL_CRYPTO_LIBRARY ${OPENSSL_ROOT}/lib)
 include_directories(${OPENSSL_ROOT}/include)
 link_directories(${OPENSSL_ROOT}/lib)
 
-set(BOOST_ROOT /usr/local/boost)
+set(BOOST_ROOT ${UECORE_BASE}/boost)
 include_directories(${BOOST_ROOT}/include)
 link_directories(${BOOST_ROOT}/lib)
 
