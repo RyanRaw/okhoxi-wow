@@ -1,2 +1,2 @@
-add_subdirectory(realmd)
-add_subdirectory(mangosd)
+add_subdirectory(authserver)
+add_subdirectory(worldserver)

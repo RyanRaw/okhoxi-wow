@@ -38,7 +38,7 @@ NOTE: This string should be an exact copy of your SQL file's second field name i
 
 Configuration variables:
 ========================
-Also see src/mangosd/mangosd.conf.dist for configuration variables!
+Also see src/worldserver/worldserver.conf.dist for configuration variables!
 
     PlayerbotAI.DebugWhisper
         Enable debug output by whispering master

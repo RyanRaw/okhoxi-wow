@@ -3,7 +3,7 @@
 cmake_minimum_required(VERSION 3.11)
 
 project(UeCore)
-set(UECORE_VERSION 1.4)
+set(UECORE_VERSION 1.4.0)
 
 include(cmake/common.cmake)
 

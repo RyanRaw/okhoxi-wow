@@ -1,16 +1,16 @@
-message("CMakeLists.txt load realmd ...")
+message("CMakeLists.txt load worldserver ...")
 
-SET(MAIN_EXECUTE realmd)
+SET(MAIN_EXECUTE worldserver)
 
-add_executable(${MAIN_EXECUTE} realmd.cpp)   # Name of exec. and location of file.
+add_executable(${MAIN_EXECUTE} worldserver.cpp)   # Name of exec. and location of file.
 
 include_directories(
-        ${CMAKE_SOURCE_DIR}/src/realmd
+        ${CMAKE_SOURCE_DIR}/src/worldserver
 )
 
 target_link_libraries(${MAIN_EXECUTE}
         PRIVATE
-        realmd_lib
+        worldserver_lib
         )
 
 target_set_warnings(${MAIN_EXECUTE} ENABLE ALL AS_ERROR ALL DISABLE Annoying) # Set warnings (if needed).
@@ -23,4 +23,3 @@ target_link_libraries(${MAIN_EXECUTE} PRIVATE dl)
 #target_link_options(${MAIN_EXECUTE} PRIVATE "-no-pie")
 
 install(TARGETS ${MAIN_EXECUTE} DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
-

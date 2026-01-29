@@ -1,16 +1,16 @@
-message("CMakeLists.txt load mangosd ...")
+message("CMakeLists.txt load authserver ...")
 
-SET(MAIN_EXECUTE mangosd)
+SET(MAIN_EXECUTE authserver)
 
-add_executable(${MAIN_EXECUTE} mangosd.cpp)   # Name of exec. and location of file.
+add_executable(${MAIN_EXECUTE} authserver.cpp)   # Name of exec. and location of file.
 
 include_directories(
-        ${CMAKE_SOURCE_DIR}/src/mangosd
+        ${CMAKE_SOURCE_DIR}/src/authserver
 )
 
 target_link_libraries(${MAIN_EXECUTE}
         PRIVATE
-        mangosd_lib
+        authserver_lib
         )
 
 target_set_warnings(${MAIN_EXECUTE} ENABLE ALL AS_ERROR ALL DISABLE Annoying) # Set warnings (if needed).
@@ -23,3 +23,4 @@ target_link_libraries(${MAIN_EXECUTE} PRIVATE dl)
 #target_link_options(${MAIN_EXECUTE} PRIVATE "-no-pie")
 
 install(TARGETS ${MAIN_EXECUTE} DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
+

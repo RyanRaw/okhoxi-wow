@@ -36,16 +36,16 @@ Execute `sql\mangos_scriptname_full.sql` on your MaNGOS world Database
 Configuration files
 ~~~~~~~~~~~~~~~~~~~
 
-Place the included "scriptdev2.conf" file within the directory containing your "mangosd.conf" and "realmd.conf" files.
+Place the included "scriptdev2.conf" file within the directory containing your "worldserver.conf" and "authserver.conf" files.
 
 You may need to change this file to match the database you created and any custom settings you wish to use.
 
 Note this file will be differently created for Unix based systems.
 
-Run mangosd
+Run worldserver
 ~~~~~~~~~~~
 
-Run mangosd from your output directory. If you use another directory to run mangos, you need (on windows) copy the mangosscript.dll to that directory before starting mangosd.
+Run worldserver from your output directory. If you use another directory to run mangos, you need (on windows) copy the mangosscript.dll to that directory before starting worldserver.
 
 
 How to Update ScriptDev2

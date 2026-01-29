@@ -16,7 +16,7 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #
 
-set(LIBRARY_NAME mangosd_lib)
+set(LIBRARY_NAME worldserver_lib)
 
 set(LIBRARY_SRCS
     CliRunnable.cpp
@@ -37,7 +37,7 @@ set(LIBRARY_SRCS
 
 if(WIN32)
   # add resource file to windows build
-  set(LIBRARY_SRCS ${LIBRARY_SRCS} mangosd.rc)
+  set(LIBRARY_SRCS ${LIBRARY_SRCS} worldserver.rc)
 endif()
 
 
@@ -114,9 +114,9 @@ set_target_properties(${LIBRARY_NAME} PROPERTIES LINK_FLAGS
 )
 
 install(TARGETS ${LIBRARY_NAME} DESTINATION ${LIB_DIR})
-install(FILES run-mangosd DESTINATION ${LIB_DIR})
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/mangosd.conf.dist.in ${CMAKE_CURRENT_BINARY_DIR}/mangosd.conf.dist)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/mangosd.conf.dist DESTINATION ${CONF_DIR})
+install(FILES run-worldserver DESTINATION ${LIB_DIR})
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/worldserver.conf.dist.in ${CMAKE_CURRENT_BINARY_DIR}/worldserver.conf.dist)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/worldserver.conf.dist DESTINATION ${CONF_DIR})
 
 if(WIN32 AND MSVC)
   install(FILES ${CMAKE_CURRENT_BINARY_DIR}/\${BUILD_TYPE}/${LIBRARY_NAME}.pdb DESTINATION ${LIB_DIR} CONFIGURATIONS Debug)

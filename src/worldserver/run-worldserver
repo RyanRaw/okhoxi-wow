@@ -6,9 +6,9 @@ while :
 do
 	echo "MaNGOS daemon restarted"
 	echo `date` >> crash.log &
-	./realmd | tail -n 20 >> crash_realmd.log
+	./worldserver | tail -n 20 >> crash_worldserver.log
 	echo " " >> crash.log &
-	pid=`ps ax | awk '($5 ~ /realmd/) { print $1 }'`
+	pid=`ps ax | awk '($5 ~ /worldserver/) { print $1 }'`
 	wait $pid
         echo `date` ", MaNGOS daemon crashed and restarted." >> serverlog
 done
