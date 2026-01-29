@@ -22,7 +22,7 @@
  *
  * a simple example how to invoke commands using SOAP
  *
- * Make sure you enabled SOAP in your mangosd.conf!
+ * Make sure you enabled SOAP in your worldserver.conf!
  *  SOAP.Enabled = 1
  */
 

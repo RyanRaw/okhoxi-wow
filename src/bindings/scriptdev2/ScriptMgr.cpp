@@ -102,10 +102,10 @@ void InitScriptLibrary()
 
    // Get configuration file
    bool configFailure = false;
-   if (!SD2Config.SetSource(_MANGOSD_CONFIG))
+   if (!SD2Config.SetSource(_WORLDSERVER_CONFIG))
        configFailure = true;
    else
-       outstring_log("SD2: Using configuration file %s", _MANGOSD_CONFIG);
+       outstring_log("SD2: Using configuration file %s", _WORLDSERVER_CONFIG);
 
    // Set SD2 Error Log File
    std::string sd2LogFile = SD2Config.GetStringDefault("SD2ErrorLogFile", "SD2Errors.log");

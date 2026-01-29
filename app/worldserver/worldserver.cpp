@@ -91,7 +91,7 @@ int main(int argc, char *argv[])
     boost::program_options::options_description desc("Allowed options");
     desc.add_options()
         ("ahbot,a", boost::program_options::value<std::string>(&auctionBotConfig), "ahbot configuration file")
-        ("config,c", boost::program_options::value<std::string>(&configFile)->default_value(_MANGOSD_CONFIG), "configuration file")
+        ("config,c", boost::program_options::value<std::string>(&configFile)->default_value(_WORLDSERVER_CONFIG), "configuration file")
         ("help,h", "prints usage")
         ("version,v", "print version and exit")
 #ifdef WIN32
@@ -182,7 +182,7 @@ int main(int argc, char *argv[])
                    "     | |ontinued| |\\/| | __ _| . ` | | |_ | |  | |\\___ \\ \n"
                    "     | |____    | |  | |/ _` | |\\  | |__| | |__| |____) |\n"
                    "      \\_____|   |_|  |_| (_| |_| \\_|\\_____|\\____/ \\____/ \n"
-                   "      http://uewow.com\\__,_|     Doing things right!\n\n");
+                   "      http://_WORLDSERVER_CONFIG.com\\__,_|     Doing things right!\n\n");
 
     sLog.outString("Using configuration file %s.", configFile.c_str());
 

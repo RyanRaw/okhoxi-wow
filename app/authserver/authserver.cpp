@@ -107,7 +107,7 @@ int main(int argc, char *argv[])
 
     boost::program_options::options_description desc("Allowed options");
     desc.add_options()
-        ("config,c", boost::program_options::value<std::string>(&configFile)->default_value(_REALMD_CONFIG), "configuration file")
+        ("config,c", boost::program_options::value<std::string>(&configFile)->default_value(_AUTHSERVER_CONFIG), "configuration file")
         ("version,v", "print version and exit")
 #ifdef WIN32
         ("s", boost::program_options::value<std::string>(&serviceParameter), "<run, install, uninstall> service");
@@ -183,7 +183,7 @@ int main(int argc, char *argv[])
     if (confVersion < _REALMDCONFVERSION)
     {
         sLog.outError("*****************************************************************************");
-        sLog.outError(" WARNING: Your realmd.conf version indicates your conf file is out of date!");
+        sLog.outError(" WARNING: Your authserver.conf version indicates your conf file is out of date!");
         sLog.outError("          Please check for updates, as your current default values may cause");
         sLog.outError("          strange behavior.");
         sLog.outError("*****************************************************************************");

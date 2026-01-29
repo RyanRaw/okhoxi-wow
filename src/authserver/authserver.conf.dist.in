@@ -1,5 +1,5 @@
 ############################################
-# MaNGOS realmd configuration file         #
+# MaNGOS authserver configuration file         #
 ############################################
 
 [RealmdConf]
@@ -107,7 +107,7 @@ ConfVersion=2010062001
 #
 ###################################################################################################################
 
-LoginDatabaseInfo = "uecore;3306;uecore;uewow.com;realmd"
+LoginDatabaseInfo = "uecore;3306;uecore;_WORLDSERVER_CONFIG.com;realmd"
 LogsDir = "/usr/local/UeCore/logs"
 MaxPingTime = 30
 RealmServerPort = 3724

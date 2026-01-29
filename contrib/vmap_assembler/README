@@ -21,7 +21,7 @@ Linux:
 
 	<output_dir> has to exist already and shall be empty.
 	The resulting files in <output_dir> are expected to be found in ${DataDir}/vmaps
-	by mangos-worldd (DataDir is set in mangosd.conf).
+	by mangos-worldd (DataDir is set in worldserver.conf).
 
 ###########################
 Windows:
@@ -43,4 +43,4 @@ Windows:
 
 	<output_dir> has to exist already and shall be empty.
 	The resulting files in <output_dir> are expected to be found in ${DataDir}\vmaps
-	by mangos-worldd (DataDir is set in mangosd.conf).
+	by mangos-worldd (DataDir is set in worldserver.conf).
