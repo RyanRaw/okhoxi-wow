@@ -7,7 +7,7 @@ UeCore全球著名中文魔兽世界服务器开源项目
 > UeCore基础网络通信采用boost版本，数据加密采用openssl，支持gcc各类版本和clang各类版本编译器。
 > UeCore服务器经过长期的开源和优化，版本成熟稳定，更新比CMangos和Vmangos都要快，并且持续更新优化，bug比较少。
 
-# history
+# introduce
 > 2016年 6月，UeCore开源魔兽世界项目正式启动
 
 > 2017年 1月，UeCore进入正式开源开发阶段
@@ -34,7 +34,7 @@ UeCore全球著名中文魔兽世界服务器开源项目
 
 > 2024年 3月，开发全新的世界Boss
 
-> 2024年 5月，重构60，70团队副本。
+> 2024年 5月，重构60团队副本。
 
 > 2025年 3月，优化部署文档。
 
@@ -80,6 +80,12 @@ https://github.com/geektcp/UeCore.git
 
 2023年9月20，基于CentOS7.x的新版本1.1已经内测通过，2023年9月16日上线。
 
+## install
+```
+wget https://github.com/geektcp/UeCore/releases/download/1.3.0/UeCore-1.3.0-all.el7.centos.x86_64.rpm
+yum install UeCore-1.3.0-all.el7.centos.x86_64.rpm
+
+```
 
 # notice
 ```
