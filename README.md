@@ -81,8 +81,8 @@ https://github.com/geektcp/UeCore.git
 
 * **VMaNGOS = 历史还原**
 * **TrinityCore = 工业级平台**
-* **mangos-classic = 可靠的私服运行环境**
-* **UeCore = 引擎级实验 / 长期技术资产**
+* **mangos-classic = 可靠但陈旧的运行平台**
+* **UeCore = 引擎级重构 / 工业级平台**
 
 | 维度    | MaNGOS   | mangos-classic  | VMaNGOS        | TrinityCore | UeCore        |
 | ----- | ------      | --------------  | -------       | ----------- | --------      |
