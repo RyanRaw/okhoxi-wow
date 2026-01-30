@@ -67,7 +67,7 @@ https://github.com/geektcp/UeCore.git
 
 <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=lUPEtyE55iYo5LxuCLWPfwYCc0KJ-12A&authKey=V5OyPonKbW7ZLuUc52yaIqNBUjVDthYfFMLYH701gm7hTXVsX57XunVls77UbbuX&noverify=0&group_code=153459822" target="_blank">技术交流QQ群： 153459822</a>
 
-## different
+## difference
 | 项目               | 核心定位             | 目标用户           | 核心特色              | 长期演进性     |
 | ------------------ | --------------       | -----------        | -----------           | ---------      |
 | **MaNGOS**         | 开源 WoW 服务端祖宗   | 研究 / 开服         | 原始开源，行为复刻     | 低              |
