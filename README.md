@@ -1,4 +1,4 @@
-UeCore全球著名中文魔兽世界服务器开源项目
+UeCore是全球著名的魔兽世界游戏引擎开源项目
 ==============================
 UeCore is an Open Source MMO RPG Framework World of Warcraft Server Engine (NOT Unreal Engine)
 ==============================
