@@ -1,6 +1,6 @@
 UeCore是全球著名的魔兽世界游戏引擎开源项目
 ==============================
-UeCore is an Open Source MMO RPG Framework World of Warcraft Server Engine (NOT Unreal Engine)
+UeCore(Universe Engine Core) is an Open Source MMO RPG Framework World of Warcraft Server Engine (NOT Unreal Engine)
 ==============================
 > UeCore是唯一一个持续了十多年的长期开源的国产开源魔兽世界游戏引擎项目，该项目基于最高60级的经典旧世界资料片版本，对应的客户端版本是1.12。
 > 
@@ -10,9 +10,9 @@ UeCore is an Open Source MMO RPG Framework World of Warcraft Server Engine (NOT 
 > 
 > UeCore基础网络通信采用boost版本，数据加密采用openssl，支持gcc各类版本和clang各类版本编译器。
 > 
-> UeCore服务器经过长期的开源和优化，版本成熟稳定，更新比CMangos和Vmangos都要快，并且持续更新优化，bug比较少。
+> UeCore服务器经过长期的开源和优化，版本成熟稳定，更新比CMangos和Vmangos都要快，并且持续更新优化，bug比较少。是一个纯粹的魔兽世界服务器引擎项目，
 > 
-> UeCore命名来自于：友谊，有益，有义气，有意思，最终简写为UeCore，一个纯粹的魔兽世界服务器引擎项目，与 Unreal Engine 或者 UE 无任何关系。
+> UeCore命名的中文含义是：友谊，有益，有义气，有意思，英文含义来自是Universe Engine Core，最终简写为UeCore，与 Unreal Engine 或者 UE 无任何关系。
 
 # introduce
 > 2016年 6月，UeCore开源魔兽世界项目正式启动
