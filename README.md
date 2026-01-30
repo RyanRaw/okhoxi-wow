@@ -218,6 +218,17 @@ https://github.com/geektcp/UeCore/releases/tag/1.0
 客户端使用1.12.x版本(60魔兽经典客户端)
 ```
 
+## Important Clarification
+
+UeCore has NO relation to Unreal Engine.
+
+- UE in UeCore does NOT mean Unreal Engine
+- UeCore is NOT "Unreal Engine Core"
+- UeCore is a World of Warcraft server engine project
+
+Please do not confuse this project with Epic Games' Unreal Engine.
+
+
 # doc
 
 - 官方技术文档地址
